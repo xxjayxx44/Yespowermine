@@ -1,0 +1,5 @@
+import os  # For reading/writing files  
+import random  # For generating random numbers   
+import time  # For timing operations    
+# Import the YesPower library (required)    
+try:      # Check if YesPower is installed. If not, install it using pip install yespower.      except ModuleNotFoundError:         print("Error: Please install 'yespower' using pip.")         pass          pass          pass       def mine(self):            while True:                 self._mine()             except Exception as e:               print(f"Error in miner {e}")               self._stop_miner()             finally:                 with Lock():                    self._is_running = False                break       def start_miner(self):           self._is_running = True           t = Thread(target=mine, args=(self,))        t.start()        return t       class MyMiner():              _interval = None              _hashes = []              _is_running = False           def __init__(self):                super().__init__()                self._interval = random.randint(10000,60000)           def start_miner(self):            return Thread(target=mine, args=(self,))```
